@@ -2,39 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:polynomial/login_control.dart';
 
-Material buildTextField(
-    {required bool obscureText,
-    Widget? prefixedIcon,
-    String? hintText,
-    final String? Function(String?)? validator,
-    void Function(String?)? onSaved,
-    TextEditingController? txController,
-    required TextInputType keyboard}) {
-  return Material(
-    color: Colors.white,
-    elevation: 2,
-    child: TextFormField(
-      onSaved: onSaved,
-      validator: validator,
-      keyboardType: keyboard,
-      style: const TextStyle(color: Colors.white),
-      cursorColor: Colors.white,
-      cursorWidth: 2,
-      obscureText: obscureText,
-      controller: txController,
-      decoration: InputDecoration(
-        border: InputBorder.none,
-        filled: true,
-        fillColor: const Color(0xFF00CDAD),
-        prefixIcon: prefixedIcon,
-        hintText: hintText,
-        hintStyle: const TextStyle(
-          color: Colors.white,
-        ),
-      ),
-    ),
-  );
-}
+// Custom Login Button
 
 SizedBox buildLoginButton({
   required String query,

@@ -4,6 +4,7 @@ import 'package:polynomial/login_control.dart';
 
 import 'widgets/components.dart';
 
+// A simple Login Form
 class LoginForm extends StatelessWidget {
   LoginForm({Key? key}) : super(key: key);
   final LoginControl loginCxt = Get.find();

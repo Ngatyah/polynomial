@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 
+// This Controller controls every aspect of the login Form
+// Use Getx Package for smooth state management
 class LoginControl extends GetxController {
   late TextEditingController loginController, passController, polyController;
 
@@ -64,6 +66,7 @@ class LoginControl extends GetxController {
     return null;
   }
 
+// Helps save currentState of the form
   checkLogin() {
     final isValid = loginFormKey.currentState!.validate();
     if (!isValid) {
